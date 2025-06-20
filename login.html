@@ -1,11 +1,18 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>FitForge Login</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="UTF-8" />
+  <title>FitForge Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+
+
+
+
+
+
 <style>
   body {
     background: linear-gradient(to bottom right, #ffe4e1, #ddb2c9);
@@ -47,36 +54,33 @@
     background-color: #ffc7d0;
   }
 </style>
+
 </head>
 <body>
-<header>
-<nav style="background:#111; padding:15px; display:flex; justify-content:space-around; color:white;">
-<a href="index.html" style="color:white; text-decoration:none;">Home</a>
-<a href="questionnaire.html" style="color:white; text-decoration:none;">Questionnaire</a>
-<a href="plan.html" style="color:white; text-decoration:none;">My Plan</a>
-<a href="login.html" style="color:white; text-decoration:none;">Login</a>
-<a href="register.html" style="color:white; text-decoration:none;">Register</a>
-</nav>
-</header>
+
 <div style="text-align:center; margin: 20px auto;">
-<img alt="Fierce Woman 1" src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
-<img alt="Fierce Woman 2" src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
-<img alt="Fierce Woman 3" src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;"/>
+  <img src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 1">
+  <img src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 2">
+  <img src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;" alt="Fierce Woman 3">
 </div>
+
+
 <div style="text-align:center; margin: 20px auto;">
-<img alt="Independent Woman Banner" src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&amp;pid=Api" style="max-width:100%; border-radius:12px;"/>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&pid=Api" alt="Independent Woman Banner" style="max-width:100%; border-radius:12px;">
 </div>
-<h2>👋 Welcome Back to FitForge</h2>
-<form id="login-form">
-<input id="email" placeholder="📧 Email" required="" type="email"/>
-<input id="password" placeholder="🔒 Password" required="" type="password"/>
-<button type="submit">Login</button>
-</form>
-<div class="links">
-<a href="register.html">Need an account? Register here</a>
-<a href="#">Forgot Password?</a>
-</div>
-<script>
+
+  <h2>👋 Welcome Back to FitForge</h2>
+  <form id="login-form">
+    <input type="email" id="email" placeholder="📧 Email" required />
+    <input type="password" id="password" placeholder="🔒 Password" required />
+    <button type="submit">Login</button>
+  </form>
+  <div class="links">
+    <a href="register.html">Need an account? Register here</a>
+    <a href="#">Forgot Password?</a>
+  </div>
+
+  <script>
     document.getElementById("login-form").addEventListener("submit", function(e) {
       e.preventDefault();
       const email = document.getElementById("email").value;
@@ -89,12 +93,14 @@
       }
     });
   </script>
+
 <div style="text-align:center; margin-top: 40px;">
-<button onclick="location.href='index.html'">Landing</button>
-<button onclick="location.href='register.html'">Register</button>
-<button onclick="location.href='login.html'">Login</button>
-<button onclick="location.href='home.html'">Home</button>
-<button onclick="location.href='10week_plan.html'">Calendar</button>
+  <button onclick="location.href='index.html'">Landing</button>
+  <button onclick="location.href='register.html'">Register</button>
+  <button onclick="location.href='login.html'">Login</button>
+  <button onclick="location.href='home.html'">Home</button>
+  <button onclick="location.href='10week_plan.html'">Calendar</button>
 </div>
+
 </body>
 </html>

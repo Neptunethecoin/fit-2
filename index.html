@@ -1,11 +1,18 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>FitForge | Start Your Transformation</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="UTF-8" />
+  <title>FitForge | Start Your Transformation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+
+
+
+
+
+
 <style>
   body {
     background: linear-gradient(to bottom right, #ffe4e1, #ddb2c9);
@@ -47,6 +54,8 @@
     background-color: #ffc7d0;
   }
 </style>
+
+
 <style>
 .fade-in {
   animation: fadeIn 1s ease-in-out;
@@ -56,60 +65,51 @@
   to { opacity: 1; transform: translateY(0); }
 }
 </style>
+
 </head>
 <body>
-<main style="background: url('images/trainer-bg.jpg') no-repeat center center/cover; padding: 100px 20px; text-align: center; color: white;">
-<h1 style="font-size: 3em; font-weight: bold; text-shadow: 2px 2px #000;">Build Your Fierce Fit Plan</h1>
-<p style="font-size: 1.3em; margin: 20px auto; max-width: 600px; text-shadow: 1px 1px #000;">
-    Personalized workouts. Real results. For women who conquer.
-  </p>
-<div style="margin-top: 30px;">
-<a href="questionnaire.html" style="background: #ff4081; padding: 15px 30px; margin: 10px; border-radius: 5px; color: white; text-decoration: none; font-size: 1.2em;">🔥 Start Questionnaire</a>
-<a href="login.html" style="background: #00bcd4; padding: 15px 30px; margin: 10px; border-radius: 5px; color: white; text-decoration: none; font-size: 1.2em;">👤 Already Registered? Login</a>
-</div>
-</main>
-<header>
-<nav style="background:#111; padding:15px; display:flex; justify-content:space-around; color:white;">
-<a href="index.html" style="color:white; text-decoration:none;">Home</a>
-<a href="questionnaire.html" style="color:white; text-decoration:none;">Questionnaire</a>
-<a href="plan.html" style="color:white; text-decoration:none;">My Plan</a>
-<a href="login.html" style="color:white; text-decoration:none;">Login</a>
-<a href="register.html" style="color:white; text-decoration:none;">Register</a>
-</nav>
-</header>
+
 <div style="text-align:center; margin: 20px auto;">
-<img alt="Independent Woman Banner" src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&amp;pid=Api" style="max-width:100%; border-radius:12px;"/>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&pid=Api" alt="Independent Woman Banner" style="max-width:100%; border-radius:12px;">
 </div>
-<h1>💪 Let's Build Your Program</h1>
+
+  <h1>💪 Let's Build Your Program</h1>
+
 <div style="text-align:center; margin: 20px auto;">
-<img alt="Fierce Woman 1" src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
-<img alt="Fierce Woman 2" src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
-<img alt="Fierce Woman 3" src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;"/>
+  <img src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 1">
+  <img src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 2">
+  <img src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;" alt="Fierce Woman 3">
 </div>
-<h3 class="tagline">Reach your goals in 10–12 weeks!</h3>
-<form action="register.html" id="questionnaire" method="get" onsubmit="showPreview(event)" style="max-width:600px; margin:0 auto; font-size: 1.1em;">
-<fieldset>
-<legend>1. What’s your fitness level?</legend>
-<label><input name="fitness" required="" type="radio" value="beginner"/> Beginner</label><br/>
-<label><input name="fitness" type="radio" value="intermediate"/> Intermediate</label><br/>
-<label><input name="fitness" type="radio" value="advanced"/> Advanced</label>
-</fieldset>
-<fieldset>
-<legend>2. What’s your main goal?</legend>
-<label><input name="goal" required="" type="radio" value="lose"/> Lose Weight</label><br/>
-<label><input name="goal" type="radio" value="tone"/> Tone &amp; Sculpt</label><br/>
-<label><input name="goal" type="radio" value="build"/> Build Strength</label>
-</fieldset>
-<fieldset>
-<legend>3. How many days/week can you commit?</legend>
-<label><input name="days" required="" type="radio" value="3"/> 3 Days</label><br/>
-<label><input name="days" type="radio" value="4"/> 4 Days</label><br/>
-<label><input name="days" type="radio" value="5"/> 5 Days</label>
-</fieldset>
-<br/>
-<button style="padding:12px 20px; font-weight:bold; background:#9b1b52; color:white; border:none; border-radius:6px;" type="submit">Setup Your Program</button>
-<button onclick="location.href='login.html'" style="margin-left:10px; padding:12px 20px; background:#ccc; color:#333; border:none; border-radius:6px;" type="button">Already a Customer</button>
+
+<h3 class="tagline">Reach your goals in&nbsp;10–12&nbsp;weeks!</h3>
+
+  
+<form id="questionnaire" onsubmit="showPreview(event)" action="register.html" method="get" style="max-width:600px; margin:0 auto; font-size: 1.1em;">
+  <fieldset>
+    <legend>1. What’s your fitness level?</legend>
+    <label><input type="radio" name="fitness" value="beginner" required> Beginner</label><br>
+    <label><input type="radio" name="fitness" value="intermediate"> Intermediate</label><br>
+    <label><input type="radio" name="fitness" value="advanced"> Advanced</label>
+  </fieldset>
+  <fieldset>
+    <legend>2. What’s your main goal?</legend>
+    <label><input type="radio" name="goal" value="lose" required> Lose Weight</label><br>
+    <label><input type="radio" name="goal" value="tone"> Tone & Sculpt</label><br>
+    <label><input type="radio" name="goal" value="build"> Build Strength</label>
+  </fieldset>
+  <fieldset>
+    <legend>3. How many days/week can you commit?</legend>
+    <label><input type="radio" name="days" value="3" required> 3 Days</label><br>
+    <label><input type="radio" name="days" value="4"> 4 Days</label><br>
+    <label><input type="radio" name="days" value="5"> 5 Days</label>
+  </fieldset>
+  <br>
+  <button type="submit" style="padding:12px 20px; font-weight:bold; background:#9b1b52; color:white; border:none; border-radius:6px;">Setup Your Program</button>
+  <button type="button" onclick="location.href='login.html'" style="margin-left:10px; padding:12px 20px; background:#ccc; color:#333; border:none; border-radius:6px;">Already a Customer</button>
 </form>
+
+
+  
 <script>
 function showPreview(event) {
   event.preventDefault();
@@ -119,5 +119,7 @@ function showPreview(event) {
   preview.classList.add('fade-in');
 }
 </script>
+
+
 </body>
 </html>

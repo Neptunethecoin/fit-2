@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>FitForge Questionnaire</title>
-<link href="css/style.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <title>FitForge Questionnaire</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+
+
+
+
+
 <style>
   body {
     background: linear-gradient(to bottom right, #ffe4e1, #ddb2c9);
@@ -46,64 +52,55 @@
     background-color: #ffc7d0;
   }
 </style>
+
 </head>
 <body>
-<header>
-<nav style="background:#111; padding:15px; display:flex; justify-content:space-around; color:white;">
-<a href="index.html" style="color:white; text-decoration:none;">Home</a>
-<a href="questionnaire.html" style="color:white; text-decoration:none;">Questionnaire</a>
-<a href="plan.html" style="color:white; text-decoration:none;">My Plan</a>
-<a href="login.html" style="color:white; text-decoration:none;">Login</a>
-<a href="register.html" style="color:white; text-decoration:none;">Register</a>
-</nav>
-</header>
+
 <div style="text-align:center; margin: 20px auto;">
-<img alt="Fierce Woman 1" src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
-<img alt="Fierce Woman 2" src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
-<img alt="Fierce Woman 3" src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;"/>
+  <img src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 1">
+  <img src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 2">
+  <img src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;" alt="Fierce Woman 3">
 </div>
+
+
 <div style="text-align:center; margin: 20px auto;">
-<img alt="Independent Woman Banner" src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&amp;pid=Api" style="max-width:100%; border-radius:12px;"/>
+  <img src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&pid=Api" alt="Independent Woman Banner" style="max-width:100%; border-radius:12px;">
 </div>
-<form id="fitnessForm">
-<h2>Answer a few questions to build your plan:</h2>
-<label>Name: <input name="name" required="" type="text"/></label>
-<label>Age: <input name="age" required="" type="number"/></label>
-<label>Gender:
+
+  <form id="fitnessForm">
+    <h2>Answer a few questions to build your plan:</h2>
+
+    <label>Name: <input type="text" name="name" required /></label>
+    <label>Age: <input type="number" name="age" required /></label>
+
+    <label>Gender:
       <select name="gender">
-<option>Male</option>
-<option>Female</option>
-<option>Other</option>
-</select>
-</label>
-<label>Fitness Level:
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label>Fitness Level:
       <select name="level">
-<option>Beginner</option>
-<option>Intermediate</option>
-<option>Advanced</option>
-</select>
-</label>
-<button type="submit">Generate Plan</button>
-</form>
-<script src="js/synced_workout_script.js"></script>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+    </label>
+
+    <button type="submit">Generate Plan</button>
+  </form>
+
+  <script src="synced_workout_script.js"></script>
+
 <div style="text-align:center; margin-top: 40px;">
-<button onclick="location.href='index.html'">Landing</button>
-<button onclick="location.href='register.html'">Register</button>
-<button onclick="location.href='login.html'">Login</button>
-<button onclick="location.href='home.html'">Home</button>
-<button onclick="location.href='10week_plan.html'">Calendar</button>
+  <button onclick="location.href='index.html'">Landing</button>
+  <button onclick="location.href='register.html'">Register</button>
+  <button onclick="location.href='login.html'">Login</button>
+  <button onclick="location.href='home.html'">Home</button>
+  <button onclick="location.href='10week_plan.html'">Calendar</button>
 </div>
-<button onclick="saveQuestionnaire()">Generate My Plan</button>
-<script>
-function saveQuestionnaire() {
-  const goal = document.querySelector('input[name="goal"]:checked')?.value || "";
-  const frequency = document.querySelector('select[name="frequency"]')?.value || "";
-  const type = document.querySelector('select[name="workout_type"]')?.value || "";
-  localStorage.setItem("fitGoal", goal);
-  localStorage.setItem("fitFrequency", frequency);
-  localStorage.setItem("fitType", type);
-  window.location.href = "plan.html";
-}
-</script>
+
 </body>
 </html>

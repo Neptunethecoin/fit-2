@@ -3,9 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FitForge - Home</title>
+  <title>Activate Account - FitForge</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/styles.css" />
   
 
 
@@ -63,24 +62,7 @@
   <img src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&pid=Api" alt="Independent Woman Banner" style="max-width:100%; border-radius:12px;">
 </div>
 
-<script>
-  // Get the selected day from URL (e.g., home.html?day=17)
-  function getQueryParam(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-  }
-
-  const day = getQueryParam('day') || localStorage.getItem('currentDay') || 1;
-  localStorage.setItem('currentDay', day);
-</script>
-
-<script>
-  if (!localStorage.getItem('fitforgeDemoMode')) {
-    window.location.href = 'activate.html';
-  }
-</script>
-
-  <h1>Welcome to FitForge 💪</h1>
+  <h1>🔓 Demo Mode Activated</h1>
 
 <div style="text-align:center; margin: 20px auto;">
   <img src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 1">
@@ -90,19 +72,9 @@
 
 <h3 class="tagline">Reach your goals in&nbsp;10–12&nbsp;weeks!</h3>
 
-  <p>Your personalized 10-week workout transformation starts here.</p>
-  <div class="nav-buttons">
-    <a href="10week_plan.html">🔥 Start Your 10-Week Plan</a>
-    <a href="index.html">⬅️ Back to Landing Page</a>
-  </div>
-
-<div style="text-align:center; margin-top: 40px;">
-  <button onclick="location.href='index.html'">Landing</button>
-  <button onclick="location.href='register.html'">Register</button>
-  <button onclick="location.href='login.html'">Login</button>
-  <button onclick="location.href='home.html'">Home</button>
-  <button onclick="location.href='10week_plan.html'">Calendar</button>
-</div>
-
+  <p>You've unlocked full access to the FitForge site. You can explore the platform now without needing to log in.</p>
+  <button onclick="localStorage.setItem('fitforgeDemoMode', 'true'); window.location.href='home.html';">
+    Enter FitForge Demo
+  </button>
 </body>
 </html>
