@@ -1,19 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>FitForge - Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/styles.css" />
-  
-
-
-
-
-
-
-
+<meta charset="utf-8"/>
+<title>FitForge - Home</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="assets/styles.css" rel="stylesheet"/>
 <style>
   body {
     background: linear-gradient(to bottom right, #ffe4e1, #ddb2c9);
@@ -55,14 +48,20 @@
     background-color: #ffc7d0;
   }
 </style>
-
 </head>
 <body>
-
+<header>
+<nav style="background:#111; padding:15px; display:flex; justify-content:space-around; color:white;">
+<a href="index.html" style="color:white; text-decoration:none;">Home</a>
+<a href="questionnaire.html" style="color:white; text-decoration:none;">Questionnaire</a>
+<a href="plan.html" style="color:white; text-decoration:none;">My Plan</a>
+<a href="login.html" style="color:white; text-decoration:none;">Login</a>
+<a href="register.html" style="color:white; text-decoration:none;">Register</a>
+</nav>
+</header>
 <div style="text-align:center; margin: 20px auto;">
-  <img src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&pid=Api" alt="Independent Woman Banner" style="max-width:100%; border-radius:12px;">
+<img alt="Independent Woman Banner" src="https://tse2.mm.bing.net/th?id=OIP.N1CTh29B9Zw4K5wMFJs1KAAAAA&amp;pid=Api" style="max-width:100%; border-radius:12px;"/>
 </div>
-
 <script>
   // Get the selected day from URL (e.g., home.html?day=17)
   function getQueryParam(name) {
@@ -73,36 +72,29 @@
   const day = getQueryParam('day') || localStorage.getItem('currentDay') || 1;
   localStorage.setItem('currentDay', day);
 </script>
-
 <script>
   if (!localStorage.getItem('fitforgeDemoMode')) {
     window.location.href = 'activate.html';
   }
 </script>
-
-  <h1>Welcome to FitForge 💪</h1>
-
+<h1>Welcome to FitForge 💪</h1>
 <div style="text-align:center; margin: 20px auto;">
-  <img src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 1">
-  <img src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;" alt="Fierce Woman 2">
-  <img src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;" alt="Fierce Woman 3">
+<img alt="Fierce Woman 1" src="assets/fierce2.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
+<img alt="Fierce Woman 2" src="assets/fierce3.jpg" style="max-width:90%; border-radius:12px; margin-bottom:15px;"/>
+<img alt="Fierce Woman 3" src="assets/fierce4.jpg" style="max-width:90%; border-radius:12px;"/>
 </div>
-
-<h3 class="tagline">Reach your goals in&nbsp;10–12&nbsp;weeks!</h3>
-
-  <p>Your personalized 10-week workout transformation starts here.</p>
-  <div class="nav-buttons">
-    <a href="10week_plan.html">🔥 Start Your 10-Week Plan</a>
-    <a href="index.html">⬅️ Back to Landing Page</a>
-  </div>
-
+<h3 class="tagline">Reach your goals in 10–12 weeks!</h3>
+<p>Your personalized 10-week workout transformation starts here.</p>
+<div class="nav-buttons">
+<a href="10week_plan.html">🔥 Start Your 10-Week Plan</a>
+<a href="index.html">⬅️ Back to Landing Page</a>
+</div>
 <div style="text-align:center; margin-top: 40px;">
-  <button onclick="location.href='index.html'">Landing</button>
-  <button onclick="location.href='register.html'">Register</button>
-  <button onclick="location.href='login.html'">Login</button>
-  <button onclick="location.href='home.html'">Home</button>
-  <button onclick="location.href='10week_plan.html'">Calendar</button>
+<button onclick="location.href='index.html'">Landing</button>
+<button onclick="location.href='register.html'">Register</button>
+<button onclick="location.href='login.html'">Login</button>
+<button onclick="location.href='home.html'">Home</button>
+<button onclick="location.href='10week_plan.html'">Calendar</button>
 </div>
-
 </body>
 </html>

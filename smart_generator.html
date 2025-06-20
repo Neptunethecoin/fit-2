@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <title>Smart Plan Generator</title>
 <link href="css/style.css" rel="stylesheet"/>
-</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head>
 <body>
 <header>
 <nav style="background:#111; padding:15px; display:flex; justify-content:space-around; color:white;">
@@ -37,8 +37,6 @@
 <button onclick="downloadPDF()" style="padding:10px 20px;">📄 Download as PDF</button>
 </div>
 </main>
-
-
 <script>
 const majorCore = ["Pallof Press", "Bench Press Leg Lifts", "Band Pallof Press"];
 const minorCore = ["Plank", "Side Plank", "Push-up Plank", "Leg Raises", "Crunchy Frog", "V-Ups", "Cable Crunches", "Crunch", "Sit-Ups", "Russian Twists", "Scissor Kicks", "Flutter Kicks", "Single Leg lift Crunches", "Captains Chair Weighted Leg Lifts", "Atomic Sit-ups", "Butt-ups", "Winshield wipers", "Planking Leg Rolls", "Mountain Climbers", "Knee To Elbow Sit-ups", "Knee Crunches", "Hanging Straight Leg Lifts", "Hanging Bent Leg Lifts", "Hanging Oblique Crunches", "Cable Oblique Crunches", "Cable Wood Choppers", "Cable Standing Crunch", "Bosu Ball Crunches", "Bosu Ball Sit-ups", "Bosu Ball Oblique Crunches", "Bosu Ball Plank", "TRX Plank", "TRX Crunches", "TRX Pikes", "TRX Scissor Kicks", "TRX Mountain Climbers", "One Legged Bosu Crunches", "SinGle Arm and Leg V-ups", "Burpees", "Superman", "Band Leg Lifts", "Band knee Oblique Crunches", "Hanging Band Leg Lifts", "Hanging Single Leg Band Lifts", "Hanging Leg Raises Static Hold", "Standing Walk Outs", "Standing One Legged Walk Outs", "Wide Leg Sit-ups", "Wide Leg Leg-Raises", "Wide Leg Russian Twists", "Two-Point Bridge", "Twisting Back Extension (M)", "Weighted Ab Crunch (M)", "Oblique Twist (M)", "Negative Crunch", "Figure-8 Crunch", "Cable Leaning Towers", "Prone Heel Touches"];
